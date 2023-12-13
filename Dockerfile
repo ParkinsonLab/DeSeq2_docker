@@ -59,8 +59,9 @@ RUN apt-get install -y libxml2-dev \
 && apt-get install -y libssl-dev \
 && apt-get install -y libgdal-dev \
 && apt-get install -y libudunits2-dev
-
 RUN apt-get install -y libcairo2-dev
 
 ADD https://raw.githubusercontent.com/ParkinsonLab/DeSeq2_docker/main/install_deseq2_deps.R /R_packages
+ADD https://compsysbio.org/deseq2_deps/BiocManager_1.30.22.tar.gz /R_packages
+
 RUN Rscript /R_packages/install_deseq2_deps.R
