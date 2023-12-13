@@ -1,7 +1,7 @@
 install.packages("withr", "/R_packages", dependencies = TRUE)
 install.packages("ggplot2", "/R_packages", dependencies = TRUE)
 install.packages("htmltools", "/R_packages", dependencies = TRUE)
-install.packages("~/storage/DeSeq2_docker/BiocManager_1.30.22.tar.gz", "/R_packages", dependencies = TRUE)
+install.packages("/R_packages/BiocManager_1.30.22.tar.gz", "/R_packages", dependencies = TRUE)
 
 library("BiocManager", lib.loc="/R_packages")
 
