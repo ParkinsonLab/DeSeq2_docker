@@ -62,3 +62,5 @@ RUN apt-get install -y libxml2-dev \
 
 RUN apt-get install -y libcairo2-dev
 
+ADD https://raw.githubusercontent.com/ParkinsonLab/DeSeq2_docker/main/install_deseq2_deps.R /R_packages
+RUN Rscript /R_packages/install_deseq2_deps.R
