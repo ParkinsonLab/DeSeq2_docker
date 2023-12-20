@@ -66,3 +66,5 @@ ADD https://raw.githubusercontent.com/ParkinsonLab/DeSeq2_docker/main/install_de
 ADD https://compsysbio.org/deseq2_deps/BiocManager_1.30.22.tar.gz /R_packages
 
 RUN Rscript /R_packages/install_deseq2_deps.R
+
+RUN chmod -R 755 /R_packages
