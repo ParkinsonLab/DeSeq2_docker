@@ -67,4 +67,7 @@ ADD https://compsysbio.org/deseq2_deps/BiocManager_1.30.22.tar.gz /R_packages
 
 RUN Rscript /R_packages/install_deseq2_deps.R
 
-RUN chmod -R 755 /R_packages
+RUN chmod -R 777 /R_packages
+
+WORKDIR /
+CMD ["bash"]
